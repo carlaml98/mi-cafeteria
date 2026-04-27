@@ -1,0 +1,290 @@
+/* SCROLL SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+/* RESET básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial;
+    text-align: center;
+}
+
+/* HEADER */
+
+    header {
+        background-color: brown;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        /* Estas dos líneas lo fijan arriba */
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff8f0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: brown;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: brown;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #6b1a1a;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+/* MENÚ */
+.menu {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.menu h2 {
+    font-size: 32px;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.menu p {
+    color: gray;
+    margin-bottom: 60px;
+} 
+
+/* TARJETAS */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta-emoji {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: brown;
+    margin-bottom: 8px;
+}
+
+.tarjeta p {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    background-color: brown;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+/* CONTACTO */
+.contacto {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff8f0;
+}
+
+.contacto h2 {
+    font-size: 32px;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    color: gray;
+    margin-bottom: 40px;
+}
+
+/* FORMULARIO */
+.formulario {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    color: brown;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: brown;
+}
+
+.campo textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.formulario button {
+    width: 100%;
+    background-color: brown;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #6b1a1a;
+}
+/* ================================
+   RESPONSIVE - CELULARES
+================================ */
+@media (max-width: 600px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    header nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* TARJETAS */
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+
+    /* FORMULARIO */
+    .formulario {
+        padding: 25px 15px;
+    }
+
+    /* MENÚ TÍTULOS */
+    .menu h2,
+    .contacto h2 {
+        font-size: 24px;
+    }
+
+}
+
+/* ================================
+   RESPONSIVE - TABLETS
+================================ */
+@media (max-width: 900px) {
+
+    .tarjeta {
+        width: 180px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+}
