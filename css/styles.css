@@ -20,20 +20,17 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 /* HEADER */
-
-    header {
-        background-color: brown;
-        color: white;
-        padding: 20px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    
-        /* Estas dos líneas lo fijan arriba */
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
+header {
+    background: linear-gradient(135deg, brown, #8b0000);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
 
 header nav a {
@@ -51,7 +48,7 @@ header nav a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background-color: #fff8f0;
+    background: linear-gradient(135deg, #fff8f0, #f5e6d3, #ffe4c4);
 }
 
 .hero h2 {
@@ -114,12 +111,15 @@ footer {
 }
 
 .tarjeta {
-    background-color: white;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
     padding: 30px 20px;
     width: 220px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    animation: aparecer 0.8s ease both;
 }
 
 .tarjeta:hover {
@@ -415,4 +415,8 @@ body.oscuro footer {
         font-size: 18px;
     }
 
+}
+body.oscuro .tarjeta {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
