@@ -377,3 +377,42 @@ body.oscuro footer {
 #modo-oscuro:hover {
     background-color: rgba(255,255,255,0.2);
 }
+/* HAMBURGUESA */
+#hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    #hamburguesa {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: brown;
+        padding: 10px 0;
+    }
+
+    #nav-menu.abierto {
+        display: flex;
+    }
+
+    #nav-menu a {
+        margin: 8px 20px;
+        font-size: 18px;
+    }
+
+}
