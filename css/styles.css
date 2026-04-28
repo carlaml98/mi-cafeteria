@@ -327,3 +327,53 @@ footer {
 header {
     animation: aparecer 0.5s ease;
 }
+/* MODO OSCURO */
+body.oscuro {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+body.oscuro header {
+    background-color: #2d0a0a;
+}
+
+body.oscuro .tarjeta {
+    background-color: #2a2a2a;
+}
+
+body.oscuro .hero {
+    background-color: #2a2a2a;
+}
+
+body.oscuro .contacto {
+    background-color: #2a2a2a;
+}
+
+body.oscuro .formulario {
+    background-color: #333;
+}
+
+body.oscuro .campo input,
+body.oscuro .campo textarea {
+    background-color: #444;
+    color: white;
+    border-color: #555;
+}
+
+body.oscuro footer {
+    background-color: #111;
+}
+
+#modo-oscuro {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#modo-oscuro:hover {
+    background-color: rgba(255,255,255,0.2);
+}
