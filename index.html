@@ -64,6 +64,7 @@
         <div class="progress-bar bg-danger" style="width: 85%">85% popular</div>
     </div>
 </div>
+</div>
         
 
         <div class="tarjeta">
@@ -97,26 +98,26 @@
     <h2>Contactanos</h2>
     <p>¿Tenés alguna pregunta? Escribinos</p>
 
-    <div class="formulario">
+    <form class="formulario" action="https://formspree.io/f/myklrplp" method="POST">
 
-        <div class="campo">
-            <label>Nombre</label>
-            <input type="text" placeholder="Tu nombre completo">
-        </div>
-
-        <div class="campo">
-            <label>Email</label>
-            <input type="email" placeholder="tu@email.com">
-        </div>
-
-        <div class="campo">
-            <label>Mensaje</label>
-            <textarea placeholder="Escribí tu mensaje aquí..."></textarea>
-        </div>
-
-        <button type="submit">Enviar mensaje</button>
-
+    <div class="campo">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
     </div>
+
+    <div class="campo">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="tu@email.com" required>
+    </div>
+
+    <div class="campo">
+        <label>Mensaje</label>
+        <textarea name="mensaje" placeholder="Escribí tu mensaje aquí..."></textarea>
+    </div>
+
+    <button type="submit">Enviar mensaje</button>
+
+</form>
 </section>
         <h2>El mejor café de la ciudad</h2>
         <p>Visitanos y disfrutá de nuestros productos artesanales</p>
