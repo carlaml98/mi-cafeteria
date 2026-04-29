@@ -420,3 +420,21 @@ body.oscuro .tarjeta {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* BUSCADOR */
+.buscador {
+    margin-bottom: 30px;
+}
+
+.buscador input {
+    padding: 12px 20px;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.buscador input:focus {
+    border-color: brown;
+}
